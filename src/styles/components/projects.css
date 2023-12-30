@@ -1,0 +1,32 @@
+.projects_main_wrapper {
+  background: white;
+  /* box-shadow: inset 0px 6px 10px -6px rgba(0, 0, 0, 0.3); */
+  color: #8892b0;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+  padding-left: 5px;
+}
+
+.projects_title {
+  color: #aaabae;
+  position: relative;
+  display: inline-block;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-weight: bold; */
+}
+
+.projects_title::after {
+  content: '';
+  position: absolute;
+  left: 100%; /* Position the line after the text */
+  top: 50%; /* Center the line vertically */
+  width: 72.5vw; /* Adjust the length of the line as needed */
+  border-top: 1px solid rgba(202, 202, 202, 0.433);
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .projects_title::after {
+    width: 0vw;
+  }
+}

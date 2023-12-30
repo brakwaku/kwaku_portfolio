@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import myResume from '../assets/resume.pdf';
-import '../styles/footer.css';
+import '../styles/components/footer.css';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <li>
             <a href='#header'>
               <span className='icon-home'></span>
-              <span className='screen-reader-text'>Top</span>
+              <span className='screen-reader-text'><i class="fa fa-solid fa-chevron-up"></i></span>
             </a>
           </li>
         </ul>

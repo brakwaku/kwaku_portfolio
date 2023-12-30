@@ -8,6 +8,7 @@ import BuildingfitPage from './pages/BuildingfitPage';
 import BYUIPage from './pages/BYUIPage';
 import AboutPage from './pages/AboutPage';
 import Footer from './components/Footer';
+import RecurringMenu from './components/RecurringMenu';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/about-me' element={<AboutPage />} />
         </Routes>
       </div>
+      <RecurringMenu />
       <Footer />
     </Router>
   );

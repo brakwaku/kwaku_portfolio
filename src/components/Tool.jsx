@@ -1,4 +1,4 @@
-import '../styles/tool.css';
+import '../styles/components/tool.css';
 
 const Tool = ({ toolImg }) => {
   const dynamicStyles = {

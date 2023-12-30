@@ -1,7 +1,10 @@
 import { Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import '../styles/home.css';
+import '../styles/pages/home.css';
+import { motion } from 'framer-motion';
 import CompanyBox from '../components/CompanyBox';
+import Projects from '../components/Projects';
+
 import ibmLogo from '../assets/ibm.png';
 import flexsimLogo from '../assets/flexsim.png';
 import byuiLogo from '../assets/byui.webp';
@@ -34,73 +37,151 @@ const HomePage = () => {
   const bfArr = [wpLogo, jqLogo, htmlLogo, cssLogo];
   const byuiArr = [reactLogo, mongoLogo, nodeLogo];
   const profileArr = [jsLogo, csharpLogo, sqlLogo, cppLogo];
+
+  const leftVariant = {
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+
+  const rightVariant = {
+    hidden: { x: 100, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    // hidden: { opacity: 0, x: -100 },
+    // visible: { opacity: 1, x: 0 }
+  };
+
   return (
     <Container>
-      <div className="announcer">
-        <h2>I Design 🖌️</h2>
-        <h2>&lt; I Code &gt;</h2>
+      <div className='announcer'>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={leftVariant}
+          transition={{ duration: 0.5 }}
+        >
+          <h2>I Design 🖌️</h2>
+        </motion.div>
+
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={rightVariant}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <h2>&lt; I Code &gt;</h2>
+        </motion.div>
       </div>
+
       <div className='main-grid mt-4'>
-        <NavLink to='/ibm'>
-          <CompanyBox
-            trimer
-            companyImage={ibmLogo}
-            borderColor='#1e6fc169'
-            companyName='IBM'
-            toolArr={ibmArr}
-          />
-        </NavLink>
-        <NavLink to='/flexsim'>
-          <CompanyBox
-            companyImage={flexsimLogo}
-            borderColor='#c0a16e62'
-            companyName='Flexsim'
-            width='80%'
-            toolArr={fsArr}
-          />
-        </NavLink>
-        <NavLink to='/thechurchofjesuschristoflatterdaysaints'>
-          <CompanyBox
-            trimer
-            companyImage={ldsLogo}
-            borderColor='#3a607c6a'
-            companyName='Church of Jesus Christ of Latter-Day Saints'
-            toolArr={ldsArr}
-          />
-        </NavLink>
-        <NavLink to='/buildingfit'>
-          <CompanyBox
-            companyImage={buildingfitLogo}
-            borderColor='#4d8fcc67'
-            companyName='Buildingfit'
-            backgroundColor='whitesmoke'
-            width='80%'
-            toolArr={bfArr}
-          />
-        </NavLink>
-        <NavLink to='/byui'>
-          <CompanyBox
-            trimer
-            companyImage={byuiLogo}
-            borderColor='#0768b26a'
-            companyName='BYU-I'
-            backgroundColor='#e9ecef'
-            width='50%'
-            toolArr={byuiArr}
-          />
-        </NavLink>
-        <NavLink to='/about-me'>
-          <CompanyBox
-            companyImage={profile}
-            borderColor='#b3670a6f'
-            companyName='Kwaku Appau-Nkansah'
-            // backgroundColor='#f6eee6'
-            width='55%'
-            toolArr={profileArr}
-          />
-        </NavLink>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <NavLink to='/ibm'>
+            <CompanyBox
+              trimer
+              companyImage={ibmLogo}
+              borderColor='#1e6fc169'
+              companyName='IBM'
+              toolArr={ibmArr}
+            />
+          </NavLink>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants}
+          transition={{ duration: 0.5, delay: 1 }}
+        >
+          <NavLink to='/flexsim'>
+            <CompanyBox
+              companyImage={flexsimLogo}
+              borderColor='#c0a16e62'
+              companyName='Flexsim'
+              width='80%'
+              toolArr={fsArr}
+            />
+          </NavLink>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants}
+          transition={{ duration: 0.5, delay: 1.5 }}
+        >
+          <NavLink to='/thechurchofjesuschristoflatterdaysaints'>
+            <CompanyBox
+              trimer
+              companyImage={ldsLogo}
+              borderColor='#3a607c6a'
+              companyName='Church of Jesus Christ of Latter-Day Saints'
+              toolArr={ldsArr}
+            />
+          </NavLink>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants}
+          transition={{ duration: 0.5, delay: 2 }}
+        >
+          <NavLink to='/buildingfit'>
+            <CompanyBox
+              companyImage={buildingfitLogo}
+              borderColor='#4d8fcc67'
+              companyName='Buildingfit'
+              backgroundColor='whitesmoke'
+              width='80%'
+              toolArr={bfArr}
+            />
+          </NavLink>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants}
+          transition={{ duration: 0.5, delay: 2.5 }}
+        >
+          <NavLink to='/byui'>
+            <CompanyBox
+              trimer
+              companyImage={byuiLogo}
+              borderColor='#0768b26a'
+              companyName='BYU-I'
+              backgroundColor='#e9ecef'
+              width='50%'
+              toolArr={byuiArr}
+            />
+          </NavLink>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={variants}
+          transition={{ duration: 0.5, delay: 3 }}
+        >
+          <NavLink to='/about-me'>
+            <CompanyBox
+              companyImage={profile}
+              borderColor='#b3670a6f'
+              companyName='Kwaku Appau-Nkansah'
+              // backgroundColor='#f6eee6'
+              width='55%'
+              toolArr={profileArr}
+            />
+          </NavLink>
+        </motion.div>
       </div>
-      <div className="home_bottom"></div>
+      <div className='home_bottom'>
+        <Projects />
+      </div>
     </Container>
   );
 };

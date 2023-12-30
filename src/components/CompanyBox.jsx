@@ -1,5 +1,5 @@
 import Tool from './Tool';
-import '../styles/company_box.css';
+import '../styles/components/company_box.css';
 
 const CompanyBox = ({
   trimer,

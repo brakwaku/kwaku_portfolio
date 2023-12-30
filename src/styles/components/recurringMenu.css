@@ -1,0 +1,11 @@
+.recurring_menu_container {
+    padding: 2rem;
+}
+.recurring_menu_items li {
+    list-style-type: none;
+    font-size: 3rem;
+}
+
+.recurring_menu_items li h2 {
+    font-size: 3rem;
+}
