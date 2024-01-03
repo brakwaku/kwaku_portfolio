@@ -36,8 +36,25 @@ code {
 }
 
 .project_description_wrapper {
+  position: relative;
   color: #95a1c5;
   padding-left: 1rem;
+}
+
+.project_description_wrapper .fa-chevron-right {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.project_description_wrapper:hover .fa-chevron-right {
+  opacity: 0.5;
+  transform: translateX(8px);
 }
 
 .project_image_container_wrapper {

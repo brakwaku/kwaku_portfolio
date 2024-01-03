@@ -18,7 +18,7 @@
 
 .main_other_project_wrapper:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transform: scale(1.031);
+  /* transform: scale(1.031); */
 }
 
 .project_title {

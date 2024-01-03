@@ -18,6 +18,7 @@ const C9forlife = () => {
           {/* <div className='each_project_icon'><a href="https://byuibroadcastaudio.cyclic.app" target="_blank" rel="noreferrer"><img src={live} alt="byuibroadcastaudio"/></a></div> */}
           {/* <div className='each_project_icon'><a href="https://github.com/brakwaku/byuibroadcastaudio" target="_blank" rel="noreferrer"><img src={source} alt="byuibroadcastaudio Github"/></a></div> */}
         </div>
+        <i class="fa fa-light fa-chevron-right"></i>
       </div>
       <div className='project_image_container_wrapper'>
         <a href='https://c9forlife.cyclic.app' target='_blank' rel='noreferrer'>

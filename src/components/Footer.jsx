@@ -11,7 +11,7 @@ const Footer = () => {
           <li>
             <a href='#header'>
               <span className='icon-home'></span>
-              <span className='screen-reader-text'><i class="fa fa-solid fa-chevron-up"></i></span>
+              <span className='screen-reader-text'><i className="fa fa-solid fa-chevron-up"></i></span>
             </a>
           </li>
         </ul>
