@@ -88,13 +88,14 @@ const HomePage = () => {
           variants={variants}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <NavLink to='/ibm'>
+          <NavLink to='/ibm' className='remove_deco'>
             <CompanyBox
               trimer
               companyImage={ibmLogo}
               borderColor='#1e6fc169'
               companyName='IBM'
               toolArr={ibmArr}
+              workDate='FEB 2022 - PRESENT'
             />
           </NavLink>
         </motion.div>
@@ -104,13 +105,14 @@ const HomePage = () => {
           variants={variants}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          <NavLink to='/flexsim'>
+          <NavLink to='/flexsim' className='remove_deco'>
             <CompanyBox
               companyImage={flexsimLogo}
               borderColor='#c0a16e62'
               companyName='Flexsim'
               width='80%'
               toolArr={fsArr}
+              workDate='APR 2021 - DEC 2021'
             />
           </NavLink>
         </motion.div>
@@ -120,13 +122,14 @@ const HomePage = () => {
           variants={variants}
           transition={{ duration: 0.5, delay: 1.5 }}
         >
-          <NavLink to='/thechurchofjesuschristoflatterdaysaints'>
+          <NavLink to='/thechurchofjesuschristoflatterdaysaints' className='remove_deco'>
             <CompanyBox
               trimer
               companyImage={ldsLogo}
               borderColor='#3a607c6a'
               companyName='Church of Jesus Christ of Latter-Day Saints'
               toolArr={ldsArr}
+              workDate='JAN 2021 - APR 2021'
             />
           </NavLink>
         </motion.div>
@@ -136,7 +139,7 @@ const HomePage = () => {
           variants={variants}
           transition={{ duration: 0.5, delay: 2 }}
         >
-          <NavLink to='/buildingfit'>
+          <NavLink to='/buildingfit' className='remove_deco'>
             <CompanyBox
               companyImage={buildingfitLogo}
               borderColor='#4d8fcc67'
@@ -144,6 +147,7 @@ const HomePage = () => {
               backgroundColor='whitesmoke'
               width='80%'
               toolArr={bfArr}
+              workDate='SEP 2020 - DEC 2020'
             />
           </NavLink>
         </motion.div>
@@ -153,7 +157,7 @@ const HomePage = () => {
           variants={variants}
           transition={{ duration: 0.5, delay: 2.5 }}
         >
-          <NavLink to='/byui'>
+          <NavLink to='/byui' className='remove_deco'>
             <CompanyBox
               trimer
               companyImage={byuiLogo}
@@ -162,6 +166,7 @@ const HomePage = () => {
               backgroundColor='#e9ecef'
               width='50%'
               toolArr={byuiArr}
+              workDate='SEP 2019 - DEC 2021'
             />
           </NavLink>
         </motion.div>
@@ -171,7 +176,7 @@ const HomePage = () => {
           variants={variants}
           transition={{ duration: 0.5, delay: 3 }}
         >
-          <NavLink to='/about-me'>
+          <NavLink to='/about-me' className='remove_deco'>
             <CompanyBox
               companyImage={profile}
               borderColor='#b3670a6f'
@@ -179,6 +184,7 @@ const HomePage = () => {
               // backgroundColor='#f6eee6'
               width='55%'
               toolArr={profileArr}
+              workDate='EMBA CANDIDATE'
             />
           </NavLink>
         </motion.div>

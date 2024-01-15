@@ -43,6 +43,13 @@
   text-decoration: none;
 }
 
+.workDate {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: rgba(96, 96, 96, 0.698)
+}
+
 @media (max-width: 1030px) {
   .main-grid {
     grid-template-rows: 1fr 1fr;

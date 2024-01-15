@@ -10,6 +10,7 @@ const CompanyBox = ({
   width,
   imageFillType,
   toolArr,
+  workDate,
 }) => {
   const dynamicStyles = {
     '--background-color': backgroundColor || 'whitesmoke',
@@ -33,6 +34,7 @@ const CompanyBox = ({
       className={`${trimer ? 'company_holder_trimmed' : 'company_holder'}`}
       style={dynamicStyles}
     >
+      <div className='workDate'>{workDate}</div>
       <div className='splash' style={dynamicBoxStyles}>
         <img
           src={companyImage}
