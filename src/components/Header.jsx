@@ -73,6 +73,17 @@ const Header = () => {
                       </NavLink>
                     </motion.div>
                     <motion.div
+                      custom={1}
+                      variants={menuItemVariants}
+                      initial='hidden'
+                      animate='visible'
+                      exit='hidden'
+                    >
+                      <NavLink to='/experiences'>
+                        <Nav.Link href='#projects'>Experiences</Nav.Link>
+                      </NavLink>
+                    </motion.div>
+                    <motion.div
                       custom={2}
                       variants={menuItemVariants}
                       initial='hidden'
@@ -91,6 +102,9 @@ const Header = () => {
                     </Nav.Link>
                     <NavLink to='/projects'>
                       <Nav.Link href='#projects'>Projects</Nav.Link>
+                    </NavLink>
+                    <NavLink to='/experiences'>
+                      <Nav.Link href='#projects'>Experiences</Nav.Link>
                     </NavLink>
                     <NavLink to='/contact'>
                       <Nav.Link href='#footer'>Contact</Nav.Link>
