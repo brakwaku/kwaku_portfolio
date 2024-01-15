@@ -39,6 +39,10 @@
   margin: 0; /* Remove default margin for the h2 elements */
 }
 
+.remove_deco {
+  text-decoration: none;
+}
+
 @media (max-width: 1030px) {
   .main-grid {
     grid-template-rows: 1fr 1fr;

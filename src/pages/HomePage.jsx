@@ -64,7 +64,9 @@ const HomePage = () => {
           variants={leftVariant}
           transition={{ duration: 0.5 }}
         >
-          <h2>I Design 🖌️</h2>
+          <NavLink to='/designer' className='remove_deco'>
+            <h2>I Design 🖌️</h2>
+          </NavLink>
         </motion.div>
 
         <motion.div
@@ -73,7 +75,9 @@ const HomePage = () => {
           variants={rightVariant}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h2>&lt; I Code &gt;</h2>
+          <NavLink to='/developer' className='remove_deco'>
+            <h2>&lt; I Code &gt;</h2>
+          </NavLink>
         </motion.div>
       </div>
 
