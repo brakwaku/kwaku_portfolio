@@ -45,7 +45,7 @@
 
 .workDate {
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 1.6rem;
   font-size: 1.4rem;
   color: rgba(96, 96, 96, 0.698)
 }
@@ -55,11 +55,21 @@
     grid-template-rows: 1fr 1fr;
     min-height: 50vh;
   }
+
+  .workDate {
+    margin-top: 1.2rem;
+    font-size: 1.15rem;
+  }
 }
 
 @media (max-width: 991px) {
   .main-grid {
     min-height: 40vh;
+  }
+
+  .workDate {
+    margin-top: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -73,6 +83,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  .workDate {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -83,9 +98,14 @@
       'a b'
       'c d';
   }
+
+  .workDate {
+    margin-top: 1.2rem;
+    font-size: .71rem;
+  }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 313px) {
   .announcer {
     margin-top: .8rem;
     margin-bottom: -1rem;
@@ -95,3 +115,14 @@
     font-size: 1rem;
   }
 }
+
+/* @media (max-width: 280px) {
+  .announcer {
+    margin-top: .8rem;
+    margin-bottom: -1rem;
+  }
+
+  .announcer h2 {
+    font-size: 1rem;
+  }
+} */
