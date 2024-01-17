@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import ibmBackground from '../assets/ibmcloud.webp';
-import fsBackground from '../assets/flex.webp';
+import ibmBackground from '../assets/ibmcloud.jpeg';
+import fsBackground from '../assets/flex.jpeg';
 import ldsBackground from '../assets/mishdep.jpeg';
 import bfBackground from '../assets/buildingfit.jpg';
 import byuiBackground from '../assets/mixingboard.jpg';
@@ -111,7 +111,7 @@ const RecurringMenu = () => {
               href='/about-me'
               onClick={(e) => handleNavigation(e, '/about-me')}
             >
-              <h2>Ultimate Kwaku</h2>
+              <h2>Gem Kwaku</h2>
             </a>
           </li>
         </div>

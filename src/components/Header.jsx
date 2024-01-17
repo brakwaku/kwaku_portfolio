@@ -73,7 +73,7 @@ const Header = () => {
                       </NavLink>
                     </motion.div>
                     <motion.div
-                      custom={1}
+                      custom={2}
                       variants={menuItemVariants}
                       initial='hidden'
                       animate='visible'
@@ -84,7 +84,7 @@ const Header = () => {
                       </NavLink>
                     </motion.div>
                     <motion.div
-                      custom={2}
+                      custom={3}
                       variants={menuItemVariants}
                       initial='hidden'
                       animate='visible'

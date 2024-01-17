@@ -33,6 +33,11 @@ const Footer = () => {
                 Projects
               </Nav.Link>
             </NavLink>
+            <NavLink className='footer_nav_items' to='/experiences'>
+              <Nav.Link className='footer_nav_items' href='/experiences'>
+                Experiences
+              </Nav.Link>
+            </NavLink>
             <NavLink className='footer_nav_items' to='/contact'>
               <Nav.Link className='footer_nav_items' href='#footer'>
                 Contact

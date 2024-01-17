@@ -10,7 +10,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 1));
+    /* background: radial-gradient(circle, transparent, rgba(0, 0, 0, 1)); */
+    background: -webkit-radial-gradient(circle, transparent, rgba(0, 0, 0, 1));
     /* z-index: 1; */
   }
 
@@ -22,7 +23,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(21, 151, 226, 0.198);
+    /* background: rgba(21, 151, 226, 0.198); */
+    background: -webkit-rgba(21, 151, 226, 0.198);
     /* z-index: 2; */
   }
 

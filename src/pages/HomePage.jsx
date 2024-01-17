@@ -7,7 +7,7 @@ import Projects from '../components/Projects';
 
 import ibmLogo from '../assets/ibm.png';
 import flexsimLogo from '../assets/flexsim.png';
-import byuiLogo from '../assets/byui.webp';
+import byuiLogo from '../assets/byui.png';
 import buildingfitLogo from '../assets/bf.png';
 import ldsLogo from '../assets/lds.png';
 import profile from '../assets/profile.png';
