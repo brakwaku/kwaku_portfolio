@@ -111,7 +111,7 @@ const RecurringMenu = () => {
               href='/about-me'
               onClick={(e) => handleNavigation(e, '/about-me')}
             >
-              <h2>Ultimate Kwaku</h2>
+              <h2>Gem Kwaku</h2>
             </a>
           </li>
         </div>
